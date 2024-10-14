@@ -1,0 +1,197 @@
+{
+    "mainInfo": {
+        "name": "мірас",
+        "class": "Священник",
+        "race": "Людина",
+        "background": "Священник Міркула",
+        "alignment": "Нейтрально-злий",
+        "experience": "751",
+        "author": "Soryu"
+    },
+    "attributes": {
+        "strenght": {
+            "name":"Сила",
+            "mod": "1",
+            "value": "13"
+        },
+        "dexterity": {
+            "name":"Спритність",
+            "mod": "0",
+            "value": "11"
+        },
+        "constitution": {
+            "name":"Статура",
+            "mod": "2",
+            "value": "15"
+        },
+        "intellegence": {
+            "name":"Інтелект",
+            "mod": "-1",
+            "value": "9"
+        },
+        "wisdom": {
+            "name":"Мудрість",
+            "mod": "3",
+            "value": "16"
+        },
+        "charisma": {
+            "name":"Харизма",
+            "mod": "2",
+            "value": "14"
+        }
+    },
+    "savingThrows": {
+        "strenght": {
+            "name": "Сила",
+            "type": "false",
+            "value": "1"
+        },
+        "dexterity": {
+            "name": "Спритність",
+            "type": "false",
+            "value": "0"
+        },
+        "constitution": {
+            "name": "Статура",
+            "type": "false",
+            "value": "2"
+        },
+        "intellegence": {
+            "name": "Інтелект",
+            "type": "false",
+            "value": "-1"
+        },
+        "wisdom": {
+            "name": "Мудрість",
+            "type": "true",
+            "value": "5"
+        },
+        "charisma": {
+            "name": "Харизма",
+            "type": "true",
+            "value": "4"
+        }
+    },
+    "skills": {
+        "acrobatics": {
+            "name": "Акробатика",
+            "type": "false",
+            "value": "0",
+            "attribute": "dexterity"
+        },
+        "animalHandling": {
+            "name": "Приборкання тварин",
+            "type": "false",
+            "value": "3",
+            "attribute": "wisdom"
+        },
+        "acrkana": {
+            "name": "Магія",
+            "type": "false",
+            "value": "-1",
+            "attribute": "intellegence"
+        },
+        "athletics": {
+            "name": "Атлетика",
+            "type": "false",
+            "value": "1",
+            "attribute": "strenght"
+        },
+        "deception": {
+            "name": "Обман",
+            "type": "false",
+            "value": "2",
+            "attribute": "charisma"
+        },
+        "history": {
+            "name": "Історія",
+            "type": "true",
+            "value": "1",
+            "attribute": "intellegence"
+        },
+        "insight": {
+            "name": "Проникливість",
+            "type": "true",
+            "value": "5",
+            "attribute": "wisdom"
+        },
+        "intimidation": {
+            "name": "Залякування",
+            "type": "false",
+            "value": "2",
+            "attribute": "charisma"
+        },
+        "investigation": {
+            "name": "Розслідування",
+            "type": "false",
+            "value": "-1",
+            "attribute": "intellegence"
+        },
+        "medicine": {
+            "name": "Медицина",
+            "type": "true",
+            "value": "5",
+            "attribute": "wisdom"
+        },
+        "nature": {
+            "name": "Природа",
+            "type": "false",
+            "value": "-1",
+            "attribute": "intellegence"
+        },
+        "perception": {
+            "name": "Увага",
+            "type": "false",
+            "value": "3",
+            "attribute": "wisdom"
+        },
+        "perfomance": {
+            "name": "Артистичність",
+            "type": "false",
+            "value": "2",
+            "attribute": "charisma"
+        },
+        "persuasion": {
+            "name": "Переконливість",
+            "type": "false",
+            "value": "2",
+            "attribute": "charisma"
+        },
+        "religion": {
+            "name": "Релігія",
+            "type": "true",
+            "value": "1",
+            "attribute": "intellegence"
+        },
+        "sleightOfHand": {
+            "name": "Спритність рук",
+            "type": "false",
+            "value": "0",
+            "attribute": "dexterity"
+        },
+        "stealth": {
+            "name": "Непомітність",
+            "type": "false",
+            "value": "0",
+            "attribute": "dexterity"
+        },
+        "survival": {
+            "name": "Виживання",
+            "type": "false",
+            "value": "3",
+            "attribute": "wisdom"
+        }
+    },
+    "hitPoints": {
+        "currentHp": "16",
+        "maxHp": "20",
+        "temporaryHp": "0",
+        "hitDice": "1d8",
+        "totalHitDice": "1"
+    },
+    "characterAditional": {
+        "armorClass": "14",
+        "initiative": "0",
+        "speed": "30"
+    }
+}
