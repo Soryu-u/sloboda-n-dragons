@@ -1,0 +1,197 @@
+{
+    "mainInfo": {
+        "name": "",
+        "class": "",
+        "race": "",
+        "background": "",
+        "alignment": "",
+        "experience": "",
+        "author": ""
+    },
+    "attributes": {
+        "strenght": {
+            "name":"",
+            "mod": "",
+            "value": ""
+        },
+        "dexterity": {
+            "name":"",
+            "mod": "",
+            "value": ""
+        },
+        "constitution": {
+            "name":"",
+            "mod": "",
+            "value": ""
+        },
+        "intellegence": {
+            "name":"",
+            "mod": "",
+            "value": ""
+        },
+        "wisdom": {
+            "name":"",
+            "mod": "",
+            "value": ""
+        },
+        "charisma": {
+            "name":"",
+            "mod": "",
+            "value": ""
+        }
+    },
+    "savingThrows": {
+        "strenght": {
+            "name": "",
+            "type": "",
+            "value": ""
+        },
+        "dexterity": {
+            "name": "",
+            "type": "",
+            "value": ""
+        },
+        "constitution": {
+            "name": "",
+            "type": "",
+            "value": ""
+        },
+        "intellegence": {
+            "name": "",
+            "type": "",
+            "value": ""
+        },
+        "wisdom": {
+            "name": "",
+            "type": "",
+            "value": ""
+        },
+        "charisma": {
+            "name": "",
+            "type": "",
+            "value": ""
+        }
+    },
+    "skills": {
+        "acrobatics": {
+            "name": "",
+            "type": "",
+            "value": "",
+            "attribute": "dexterity"
+        },
+        "animalHandling": {
+            "name": "",
+            "type": "",
+            "value": "",
+            "attribute": "wisdom"
+        },
+        "acrkana": {
+            "name": "",
+            "type": "",
+            "value": "",
+            "attribute": "intellegence"
+        },
+        "athletics": {
+            "name": "",
+            "type": "",
+            "value": "",
+            "attribute": "strenght"
+        },
+        "deception": {
+            "name": "",
+            "type": "",
+            "value": "",
+            "attribute": "charisma"
+        },
+        "history": {
+            "name": "",
+            "type": "",
+            "value": "",
+            "attribute": "intellegence"
+        },
+        "insight": {
+            "name": "",
+            "type": "",
+            "value": "",
+            "attribute": "wisdom"
+        },
+        "intimidation": {
+            "name": "",
+            "type": "",
+            "value": "",
+            "attribute": "charisma"
+        },
+        "investigation": {
+            "name": "",
+            "type": "",
+            "value": "",
+            "attribute": "intellegence"
+        },
+        "medicine": {
+            "name": "",
+            "type": "",
+            "value": "",
+            "attribute": "wisdom"
+        },
+        "nature": {
+            "name": "",
+            "type": "",
+            "value": "",
+            "attribute": "intellegence"
+        },
+        "perception": {
+            "name": "",
+            "type": "",
+            "value": "",
+            "attribute": "wisdom"
+        },
+        "perfomance": {
+            "name": "",
+            "type": "",
+            "value": "",
+            "attribute": "charisma"
+        },
+        "persuasion": {
+            "name": "",
+            "type": "",
+            "value": "",
+            "attribute": "charisma"
+        },
+        "religion": {
+            "name": "",
+            "type": "",
+            "value": "",
+            "attribute": "intellegence"
+        },
+        "sleightOfHand": {
+            "name": "",
+            "type": "",
+            "value": "",
+            "attribute": "dexterity"
+        },
+        "stealth": {
+            "name": "",
+            "type": "",
+            "value": "",
+            "attribute": "dexterity"
+        },
+        "survival": {
+            "name": "",
+            "type": "",
+            "value": "",
+            "attribute": "wisdom"
+        }
+    },
+    "hitPoints": {
+        "currentHp": "",
+        "maxHp": "",
+        "temporaryHp": "",
+        "hitDice": "",
+        "totalHitDice": ""
+    },
+    "characterAditional": {
+        "armorClass": "",
+        "initiative": "",
+        "speed": ""
+    }
+}
