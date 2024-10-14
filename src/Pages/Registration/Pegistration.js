@@ -29,6 +29,7 @@ export default function Registration() {
                         {page}
                     </button>
                 </div>
+                <p className={styles.login}>Вже є обліковий запис? <a>Ввійти</a></p>
             </div>
         </div>
     )
