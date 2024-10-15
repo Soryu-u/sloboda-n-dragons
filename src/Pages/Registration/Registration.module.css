@@ -76,11 +76,12 @@
     text-transform: none;
 }
 
-.login > a {
+.link{
     color: rgb(128, 128, 231);
     cursor: pointer;
+    text-decoration: none;
 }
 
-.login > a:hover {
+.link:hover {
     text-decoration: underline;
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Registration.module.css";
+import { Link } from "react-router-dom";
 
 export default function Registration() {
     const page = "Зареєструватись";
@@ -29,7 +30,7 @@ export default function Registration() {
                         {page}
                     </button>
                 </div>
-                <p className={styles.login}>Вже є обліковий запис? <a>Ввійти</a></p>
+                <p className={styles.login}>Вже є обліковий запис? <Link to="/login" className={styles.link}>Ввійти</Link></p>
             </div>
         </div>
     )

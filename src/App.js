@@ -7,7 +7,11 @@ function App() {
     return (
 		<div className={styles.main}>
 			<Routes>
-				<Route path="/" element={<Main/>}/>
+				<Route path="/" element={<Main/>}>
+					<Route path="/compendium" element={<div>compendium</div>}/>
+					<Route path="/public" element={<div>public</div>}/>
+					<Route path="/home" element={<div>home</div>}/>
+				</Route>
 				<Route path="registration" element={<Registration/>}/>
 			</Routes>
 		</div>
