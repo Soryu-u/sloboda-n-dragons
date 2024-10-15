@@ -1,0 +1,87 @@
+.main {
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    user-select: none;
+}
+
+.head {
+    border-radius: 20px;
+    background-color: #333333;
+    padding: 11px 15px;
+    margin-bottom: 50px;
+    box-shadow: 5px 10px 10px rgba(0,0,0, 0.25);
+}
+
+.head > p {
+    background-color: #d4d4d4;
+    color: #FF0000;
+    border-radius: 20px;
+    font-size: 30px;
+    margin: 0;
+    padding: 0 30px;
+}
+
+.container {
+    background-color: #333333;
+    padding: 24px 60px 30px 60px;
+    box-shadow: 10px 10px 10px rgba(0,0,0, 0.25);
+    border-radius: 35px;
+}
+
+.header {
+    border-bottom: 1px solid #ffffff;
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+} 
+
+.data_inputs {
+    padding: 25px 0;
+    font-size: 12px;
+}
+.data_inputs > p {
+    width: 100%;
+}
+
+.input {
+    background-color: #d9d9d9;
+    height: 40px;
+    width: 93%;
+    max-width: 100%;
+    font-size: 18px;
+    padding: 0 10px;
+}
+
+.register_btn {
+    width: 200px;
+    height: 50px;
+    border-radius: 43px;
+    box-shadow: 2px 4px 10px rgba(100,100,100, 0.25);
+    background-color: #7D55AF;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.login{
+    padding: 15px 0 0 0;
+    margin: 0;
+    font-size: 14px;
+    text-transform: none;
+}
+
+.link{
+    color: rgb(128, 128, 231);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
