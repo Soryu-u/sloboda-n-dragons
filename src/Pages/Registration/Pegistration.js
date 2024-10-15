@@ -1,10 +1,12 @@
 import React from "react";
 import styles from "./Registration.module.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Registration() {
     const page = "Зареєструватись";
+    const navigate = useNavigate();
     function Submit() {
+        navigate(`/home`);
         return console.log("submit")
     };
 
