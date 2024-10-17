@@ -1,12 +1,10 @@
 import React from "react";
 import styles from "./Header.module.css";
 import { Link, NavLink } from "react-router-dom";
+import { useAuth } from "../../providers/AuthProvider";
 
 export default function Header() {
-    let auth = false;
-    function relog () {
-        return console.log('Relog');
-    }
+    const auth = useAuth();
     return (
         <div className={styles.main}>
             <NavLink to="/compendium" className={styles.link}>
@@ -15,12 +13,12 @@ export default function Header() {
             <Link to="/public" className={styles.link}>
                 Слобода й дракони
             </Link>
-            {auth ? 
+            {auth.token ? 
                 <>
                     <Link to="/profile" className={styles.link}>
                         Профіль
                     </Link>
-                    <Link to="/public" className={styles.link} onClick={relog}>
+                    <Link to="/public" className={styles.link} onClick={() => auth.logOut()}>
                         Вийти
                     </Link>
                 </> : 

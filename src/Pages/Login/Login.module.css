@@ -76,6 +76,13 @@
     text-transform: none;
 }
 
+.error {
+    color: #FF0000;
+    text-transform: none;
+    font-size: 14px;
+    padding: 0 0 10px 0;
+}
+
 .link{
     color: rgb(128, 128, 231);
     cursor: pointer;
