@@ -47,9 +47,9 @@ export default function Login() {
 
     return (
         <div className={styles.main}>
-            <div className={styles.head}>
-                <p>Sloboda and Dragons</p>
-            </div>
+            <Link to="/public" className={styles.head}>
+                <div>Sloboda and Dragons</div>
+            </Link>
             <div className={styles.container}>
                 <p className={styles.header}>Вхід</p>
                 <form onSubmit={handleSubmitEvent}>
