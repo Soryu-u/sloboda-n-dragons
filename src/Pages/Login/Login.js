@@ -20,9 +20,14 @@ export default function Login() {
         if (input.username !== "" && input.password !== "") {
           const result = await auth.loginAction(input);
     
+            console.log(result);
+            
+
           if (!result.success) {
             setLoginError(true);
+            
             setLoginErrorMsg(result.message);
+            
           } else {
             setLoginError(false);
             setLoginErrorMsg("");

@@ -5,6 +5,8 @@ import { useAuth } from "../../providers/AuthProvider";
 
 export default function Registration() {
     const page = "Зареєструватись";
+    const [registerError, setRegisterError] = useState(true);
+    const [registerErrorMsg, setRegisterErrorMsg] = useState("");
 
     const [formData, setFormData] = useState({
         username: "",
@@ -18,10 +20,13 @@ export default function Registration() {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log(formData)
-        auth.registerAction(formData);
+        const result = await auth.registerAction(formData);
+        console.log(result);
+        
+        setRegisterErrorMsg(result.message);
+        setRegisterError(result.success);
     };
 
     return (
@@ -68,6 +73,7 @@ export default function Registration() {
                             />
                         </div>
                     </div>
+                    {!registerError ? <div className={styles.error}>{registerErrorMsg}</div> : <></>}
                     <button className={styles.register_btn} type="submit" title={page}>
                         {page}
                     </button>

@@ -19,15 +19,17 @@ const AuthProvider = ({ children }) => {
       });
 
       const res = await response.json();
-      if (res.data) {
+      console.log(res);
+      
+      if (res.success) {
         // Логін користувача після реєстрації
         localStorage.setItem("site", res.token);
         navigate("/home"); // Перенаправлення після реєстрації
-        return;
+        return { success: true, user: res.user };
       }
       throw new Error(res.message);
     } catch (err) {
-      console.error(err.message);
+      return { success: false, message: err.message || "Login failed" };
     }
   };
 
@@ -42,22 +44,36 @@ const AuthProvider = ({ children }) => {
       });
   
       const res = await response.json();
+      
+      console.log(res);
+      
+
+      // Перевіряємо, чи є користувач і токен у відповіді
+      if (res.success && res.token) {
+        console.log("User: ", res.user);
+        console.log("Token: ", res.token);
   
-      if (res.data) {
-        setUser(res.data.user);
+        setUser(res.user);
         setToken(res.token);
+  
+        // Зберігаємо токен в localStorage
         localStorage.setItem("site", res.token);
+  
+        // Переходимо на сторінку home
         navigate("/home");
-        return { success: true };
+  
+        return res;
       }
   
       // Якщо щось пішло не так, повертаємо повідомлення про помилку
       return { success: false, message: res.message || "Login failed" };
     } catch (err) {
       // Повертаємо повідомлення про помилку при виникненні помилки
+      console.error(err.message);
       return { success: false, message: err.message || "An error occurred" };
     }
   };
+  
   
   const logOut = () => {
     setUser(null);

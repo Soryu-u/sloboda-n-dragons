@@ -5,6 +5,7 @@ import Registration from './Pages/Registration/Pegistration';
 import Login from './Pages/Login/Login';
 import Home from './Pages/Home/Home';
 import AuthProvider from './providers/AuthProvider';
+import Profile from './Pages/Profile/Profile';
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
 						<Route path="/compendium" element={<div>compendium</div>}/>
 						<Route path="/public" element={<div>public</div>}/>
 						<Route path="/home" element={<Home/>}/>
+						<Route path="/profile" element={<Profile/>}/>
 					</Route>
 					<Route path="registration" element={<Registration/>}/>
 					<Route path="login" element={<Login/>}/>
