@@ -23,6 +23,8 @@ const AuthProvider = ({ children }) => {
       if (res.success) {
         // Логін користувача після реєстрації
         localStorage.setItem("site", res.token);
+        setToken(res.token);
+        setUser(res.user);
         navigate("/home"); // Перенаправлення після реєстрації
         return { success: true, user: res.user };
       }
