@@ -18,10 +18,7 @@ export default function Login() {
     const handleSubmitEvent = async (e) => {
         e.preventDefault();
         if (input.username !== "" && input.password !== "") {
-          const result = await auth.loginAction(input);
-    
-            console.log(result);
-            
+          const result = await auth.loginAction(input);        
 
           if (!result.success) {
             setLoginError(true);

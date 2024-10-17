@@ -10,11 +10,14 @@ export default function Header() {
             <NavLink to="/compendium" className={styles.link}>
                 Бібліотека
             </NavLink>
-            <Link to="/public" className={styles.link}>
+            <Link to={auth.token ? "/home" : "/public"}className={styles.link}>
                 Слобода й дракони
             </Link>
             {auth.token ? 
-                <>
+                <>                    
+                    <Link to="/public" className={styles.link}>
+                        Новини
+                    </Link>
                     <Link to="/profile" className={styles.link}>
                         Профіль
                     </Link>

@@ -23,7 +23,6 @@ export default function Registration() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         const result = await auth.registerAction(formData);
-        console.log(result);
         
         setRegisterErrorMsg(result.message);
         setRegisterError(result.success);

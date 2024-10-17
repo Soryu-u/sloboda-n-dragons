@@ -19,7 +19,6 @@ const AuthProvider = ({ children }) => {
       });
 
       const res = await response.json();
-      console.log(res);
       
       if (res.success) {
         // Логін користувача після реєстрації
@@ -44,15 +43,10 @@ const AuthProvider = ({ children }) => {
       });
   
       const res = await response.json();
-      
-      console.log(res);
-      
+          
 
       // Перевіряємо, чи є користувач і токен у відповіді
       if (res.success && res.token) {
-        console.log("User: ", res.user);
-        console.log("Token: ", res.token);
-  
         setUser(res.user);
         setToken(res.token);
   

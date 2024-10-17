@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Profile.module.css";
 import { getProfile, changePassword } from "../../providers/ProfileProvider";
+import { useAuth } from "../../providers/AuthProvider";
+import { Navigate } from "react-router-dom";
 
 export default function Profile () {
     const [profile, setProfile] = useState({ username: "", email: "" });
@@ -9,6 +11,7 @@ export default function Profile () {
     const [passwordMessage, setPasswordMessage] = useState("");
     const [profileError, setProfileError] = useState("");
     const [loading, setLoading] = useState(true);
+    const user = useAuth();
 
     // Отримуємо токен з LocalStorage
   const token = localStorage.getItem("site");
@@ -39,9 +42,14 @@ export default function Profile () {
     }
   };
 
+  if (!user.token) return (
+      <Navigate to="/login" />
+  );
+
   if (loading) {
     return <p>Завантаження...</p>;
   }
+  
 
     return (
 <div>
